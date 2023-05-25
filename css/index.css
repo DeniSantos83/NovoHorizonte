@@ -176,6 +176,13 @@
   opacity: 0.6;
   transition: 0.5s;
 }
+.banner-content1 {
+  color: #136d01;
+  text-align: justify;
+  
+  
+}
+
 
 @media (min-width: 768px) {
   .title {

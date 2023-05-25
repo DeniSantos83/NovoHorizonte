@@ -1,11 +1,4 @@
-<script>
-    openmenu.addEventlistener("click", () = {
-        menubar.style.display = 'flex'
-        menu.style.opacity = '1'
-    })
+const menulinks = document.querySelectorAll('')
 
-    closemenu.addEventlistener('click', () =  {
-        menubar.style.opacity = '0'
-        menubar.removeAttribute('style')
-    })
-</script>
+console.log(menulinks);
+
