@@ -21,7 +21,11 @@
   .secondary-color {
 	color: #b3b3b3;
   }
-  
+  /*Scroll suave*/
+  #inici0, #espaco, #servicos, #equipe, #contato {
+    scroll-behavior: smooth;
+    scroll-margin-top: 130px;
+  }
   /* NAVBAR */
   #navbar {
 	border-bottom: 1px solid #0c8800;
@@ -31,15 +35,20 @@
   #navbar a {
 	color: #0e9901;
   font-size: 1.5rem;
+  
   }
   
   #navbar a:hover {
 	color: #e06602;
+  border-bottom: 1px solid #e06602;
+  
   }
   
-  #navbar .active {
-	border-bottom: 1px solid #c95b01;
+  #navbar .active  {
+	border-bottom: 1px solid #ece8e2;
   }
+  
+  
   
   .navbar-brand {
 	display: flex;
@@ -310,7 +319,7 @@
 }
 
 #social-icons i:hover {
-  color: #bea48d;
+  color: #c95b01;
 }
 
 /* FOOTER DETAILS */
@@ -345,12 +354,12 @@
 }
 
 #links-container a:hover {
-  color: #fff;
+  color: #e06602;
 }
 
 /* FOOTER BOTTOM */
 #footer-bottom {
-  border-top: 1px solid #7a7a7a;
+  border-top: 1px solid #e06602;
   padding-top: 2em;
 }
 
