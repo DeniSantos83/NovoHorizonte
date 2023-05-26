@@ -40,16 +40,20 @@
   
   #navbar a:hover {
 	color: #e06602;
-  border-bottom: 1px solid #e06602;
   
-  }
+ }
   
   #navbar .active  {
-	border-bottom: 1px solid #ece8e2;
+	border-bottom: 3px solid #ece8e2;
+  width: 5%;
+  }
+  #navbar .active:hover {
+    border-bottom: 3px solid #c95b01;
+    width:100%;
+    transition: all 0.2s;
   }
   
-  
-  
+    
   .navbar-brand {
 	display: flex;
   }
@@ -74,7 +78,7 @@
 	margin: 0 1em;
   }
 
- 
+  
   /* SLIDER */
 #slider {
 	margin-top: 8em;
