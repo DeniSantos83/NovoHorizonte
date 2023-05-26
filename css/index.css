@@ -258,6 +258,10 @@
   transition: 0.5s;
 }
 
+h3 {
+  border-bottom: 1px solid #c95b01;
+}
+
 @media (min-width: 768px) {
   .title {
     font-size: 2.4em;
