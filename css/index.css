@@ -15,25 +15,26 @@
   }
   
   .primary-color {
-	color: #0c8800;
+	color: #115e01;
   }
   
   .secondary-color {
 	color: #b3b3b3;
   }
   /*Scroll suave*/
-  #inici0, #espaco, #servicos, #equipe, #contato {
+  #inicio, #espaco, #servicos, #equipe, #contato, #psicologos, #nutricionista{
     scroll-behavior: smooth;
     scroll-margin-top: 130px;
   }
+   
   /* NAVBAR */
   #navbar {
-	border-bottom: 1px solid #0c8800;
+	border-bottom: 1px solid #115e01;
 	
   }
   
   #navbar a {
-	color: #0e9901;
+	color: #126b00;
   font-size: 1.5rem;
   
   }
@@ -172,7 +173,7 @@
 
 #featured-images .col-md-4:hover > .banner-content {
   opacity: 0.8;
-  color: #147700;
+  color: #115e01;
 }
 
 #featured-images .banner-content {
@@ -260,6 +261,7 @@
 
 h3 {
   border-bottom: 1px solid #c95b01;
+  color: #115e01;
 }
 
 @media (min-width: 768px) {
@@ -275,7 +277,45 @@ h3 {
     opacity: 0;
   }
 }
-
+/*Link de especialidades*/
+.nav-tabs .nav-link.active {
+  color: #c95b01;
+  background-color: var(--bs-nav-tabs-link-active-bg);
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #115e01;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-tabs .nav-link {
+  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+  border: var(--bs-nav-tabs-border-width) solid transparent;
+  border-top-left-radius: var(--bs-nav-tabs-border-radius);
+  border-top-right-radius: var(--bs-nav-tabs-border-radius);
+}
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: #c95b01;
+  --bs-nav-link-hover-color: #c95b01;
+  --bs-nav-link-disabled-color: #c95b01;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav :hover{
+  color: #d35f00;
+}
 /* INFO */
 #info-content {
   margin-bottom: 4em;
