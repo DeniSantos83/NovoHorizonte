@@ -172,12 +172,12 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+    <div class="col-12 col-md-10 offset-md-1 " id="mini-banners">
       <div class="row">
         <div class="col-12 col-md-4">
-          <div class="card text-center">
+          <div class="card text-center h-100">
             <i class="bi bi-book primary-color"></i>
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title primary-color">Sobre o Espaço Novo Horizonte</h5>
               <p class="card-text secondary-color">
                 "Buscando garantir a saúde como um direito fundamental, o Espaço Novo Horizonte foi planejado para ser um ambiente que proporcione confiança, conforto, acolhimento e segurança.
@@ -186,10 +186,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="card text-center">
+        <div class="col-12 col-md-4 ">
+          <div class="card text-center h-100">
             <i class="bi bi-card-checklist primary-color"></i>
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title primary-color">Serviços oferecidos</h5>
               <p class="card-text secondary-color">
                 <ul class="line-color">
@@ -206,10 +206,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="card text-center">
+        <div class="col-12 col-md-4 ">
+          <div class="card text-center h-100">
             <i class="bi bi-file-person primary-color"></i>
-            <div class="card-body primary-color">
+            <div class="card-body ">
               <h5 class="card-title primary-color">
                 Quadro de profissionais
               </h5>
@@ -406,21 +406,18 @@
         Saiba mais sobre a nossa equipe de profissionais
       </p>
       <!--Teste de aba-->
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#piscologos">Psicológos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#nutricionista">Nutricionistas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Fonoaudiólogos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Terapeutas</a>
-        </li>
-      </ul>
-    <!--Fim de teste de aba-->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Especialidades
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#psicologos">Psicológos</a></li>
+          <li><a class="dropdown-item" href="#nutricionista">Nutricionistas</a></li>
+          <li><a class="dropdown-item" href="#">Fonoaudiólogos</a></li>
+          <li><a class="dropdown-item" href="#">Terapeutas</a></li>
+        </ul>
+      </div>
+      <!--Fim de teste de aba-->
     <br>
     <br>
         <h3 class="list-esp" id="psicologos">
@@ -663,8 +660,100 @@
             </div>
           </div>
   </div>
+  <!--Trabalhe conosco-->
+  <div class="container" id="info-container">
+    <div class="col-12">
+      <div class="row">
+        <div class="accordion" id="accordionExample">
+             <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Trabalhe Conosco
+                   </button>
+                  </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+               <div class="accordion-body">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                  <div class="messages"></div>
+
+                  <div class="controls">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_name">Nome</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Informe seu nome" required="required"
+                                      data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_lastname">Sobrenome</label>
+                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Informe seu sobrenome" required="required"
+                                      data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_email">E-mail</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Informe seu e-mail" required="required"
+                                      data-error="Este não é um e-mail válido">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_phone">Telefone</label>
+                                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Informe seu telefone">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <br>
+                      <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Especialidades</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Informe sua especialidade...</option>
+                          <option value="1">Psicologia</option>
+                          <option value="2">Nutrição</option>
+                          <option value="3">Fonoaudiologia</option>
+                          <option value="3">Terapeuta</option>
+                          <option value="3">Psicopedagogia</option>
+                          <option value="3">Psiquiatria</option>
+                        </select>
+                      </div>
+
+
+                      <div class="form-group">
+                          <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                          <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+
+                      <input type="submit" class="btn btn-primary" value="Enviar">
+
+                      
+
+                  </div>
+
+              </form>
+                  
+                  
+                  
+                  
+                  
+
+                  
+      </div>
+    </div>
+    </div></div>
   </div>
-  
+  <br>
   <!-- FOOTER -->
   <footer class="container-fluid bg-dark-color" id="footer">
     <div class="container">
