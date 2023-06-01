@@ -22,7 +22,7 @@
 	color: #b3b3b3;
   }
   /*Scroll suave*/
-  #inicio, #espaco, #servicos, #equipe, #contato, #psicologos, #nutricionista{
+  #inicio, #espaco, #servicos, #equipe, #contato, #psicologos, #nutricionista, #local{
     scroll-behavior: smooth;
     scroll-margin-top: 130px;
   }
@@ -35,7 +35,7 @@
   
   #navbar a {
 	color: #126b00;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   
   }
   
@@ -76,10 +76,13 @@
   }
   
   #navbar-items .nav-item {
-	margin: 0 1em;
+	margin: 0 .5em;
   }
 
+  /*TESTE DE FADE*/
   
+
+
   /* SLIDER */
 #slider {
 	margin-top: 8em;
@@ -278,10 +281,32 @@ h3 {
     opacity: 0;
   }
 }
+
+.title:before {
+  width: 75px;
+  border-top: 4px solid #c95b01;
+  content: '';
+  position: absolute;
+  bottom: 2em;
+}
 /*Link de especialidades*/
 .btn-secondary {
   color: #fff;
   background-color: #115e01;
+  border-color: #c95b01;
+  border-radius: 8px;
+}
+
+.btn-check:focus+.btn-secondary, .btn-secondary:focus {
+  color: #fff;
+  background-color: #c95b01;
+  border-color: #115e01;
+  box-shadow: 0 0 0 0.25rem #115e01;
+}
+
+.btn-secondary:hover {
+  color: rgb(255, 255, 255);
+  background-color: #136d00;
   border-color: #c95b01;
 }
 
@@ -312,7 +337,7 @@ h3 {
 }
 
 
-/*trabalhe conosco*/
+/*Localização*/
 .btn-primary {
   color: #fff;
   background-color: #115e01;
@@ -327,6 +352,15 @@ h3 {
   color: #115e01;
   background-color: #e7f1ff;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+.accordion-button {
+  color: #115e01;
+}
+.loc {
+  color: #115e01;
+}
+.trabcnc {
+  color: #b3b3b3;
 }
 /* FOOTER TOP */
 #footer {
@@ -416,3 +450,6 @@ h3 {
     padding-left: 2em;
   }
 }
+
+
+/*Trabalhe conosco*/

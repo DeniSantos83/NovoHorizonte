@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Espaço Novo Horizonte</title>
+  <link rel="shortcut icon" href="img/titimg.PNG" type="image/x-icon" />
+  <!-- Google fonts Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet"/>
+    
+    <!-- CSS Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"/>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+       <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!--Scrollreveal JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  bg-primary-color" id="navbar">
+    <div class="container py-" >
+      <a class="navbar-brand"  >
+        <img src="img/hor.PNG" alt="Espaço Novo Horizonte" />
+      </a>
+    </nav> 
+      
+  <section id="book-a-table" class="book-a-table">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header mt-lg-3">
+      <h3 class="title primary-color">Trabalhe conosco</h3>
+      <p class="subtitle secondary-color">Preencha seus dados e faça parte da equipe de profissionais Novo Horizonte</p>
+    </div>
+    <div>
+      <div class="container" id="info-container">
+        <div class="col-12">
+          <div class="row">
+        <div class="accordion" id="accordionExample">
+             <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Trabalhe Conosco
+                   </button>
+                  </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+               <div class="accordion-body">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                  <div class="messages"></div>
+
+                  <div class="controls">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_name">Nome</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Informe seu nome" required="required"
+                                      data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_lastname">Sobrenome</label>
+                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Informe seu sobrenome" required="required"
+                                      data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_email">E-mail</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Informe seu e-mail" required="required"
+                                      data-error="Este não é um e-mail válido">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="form_phone">Telefone</label>
+                                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Informe seu telefone">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <br>
+                      <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Especialidades</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Informe sua especialidade...</option>
+                          <option value="1">Psicologia</option>
+                          <option value="2">Nutrição</option>
+                          <option value="3">Fonoaudiologia</option>
+                          <option value="3">Terapeuta</option>
+                          <option value="3">Psicopedagogia</option>
+                          <option value="3">Psiquiatria</option>
+                        </select>
+                      </div>
+                      <form>
+                        <div class="form-group">
+                          Anexe seu curricúlo aqui <br>
+                          <label for="exampleFormControlFile1"></label>
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                      </form>
+                      <br>
+
+                      <div class="form-group">
+                          <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                          <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+
+                      <input type="submit" class="btn btn-primary" value="Enviar">
+
+                      
+
+                  </div>
+
+              </form>
+                  
+                  
+                  
+                  
+                  
+
+                  
+               </div>
+             </div>
+          </div>
+      
+
+    </div>
+    
+    </div><!-- End Reservation Form -->
+
+    </div>
+
+  </div>
+</section>
+<div class="container"  id="info-container">
+  <div class="col-12" >
+
+<footer class="container-fluid bg-dark-color" id="footer">
+  <div class="container">
+    <div class="row">
+      <!-- FOOTER TOP -->
+      <div class="col-12" id="footer-top">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <h2 id="contato">
+              Espaço Novo Horizonte
+            </h2>
+          </div>
+          <div class="col-4" id="social-icons">
+            <i class="bi bi-facebook" ></i>
+            <i class="bi bi-instagram" ></i>
+            <i class="bi bi-youtube" ></i>
+            <i class="bi bi-twitter" ></i>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER DETAILS -->
+      <div class="col-12" id="footer-details">
+        <div class="row">
+          <div class="col-12 col-md-4" id="news-container">
+            <h4>Fique por dentro das novidades</h4>
+            <p class="secondary-color">
+              Inscreva-se para saber em primeira mão
+            </p>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Digite o seu e-mail"
+                />
+              </div>
+              <button class="btn btn-dark">Inscrever</button>
+            </form>
+          </div>
+          <div class="col-12 col-md-4" id="contact-container">
+            <h4>Contato e Localização</h4>
+            <p class="secondary-color">(79) 98118-7083 - (79)93085-4893</p>
+            <p class="secondary-color">espaçonovohorizonte@gmail.com</p>
+            <p class="secondary-color">CLÍNICA NOVO HORIZONTE LTDA - CNPJ 45.593.182/0001-90
+              Endereço: Rua Antônio José de Souza, 49, bairro Luzia.
+              Aracaju/Sergipe/. CEP 49045-440</p>
+          </div>
+          <div class="col-12 col-md-4" id="links-container">
+            <div class="row">
+              <h4>Você pode estar buscando por:</h4>
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li><a href="index.html" class="secondary-color">Espaço</a></li>
+                  <li><a href="index.html" class="secondary-color">Especialidades</a></li>
+                  <li><a href="index.html" class="secondary-color">Contato</a></li>
+                  <li><a href="trabalheconosco.html" target="blank" class="secondary-color">Trabalhe Conosco</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+        <br>
+      
+      <!-- FOOTER BOTTOM -->
+      <div class="col-12" id="footer-bottom">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-3">
+            <p class="secondary-color">espaçonovohorizonte &copy; 2023</p>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="secondary-color">
+              Nós acolhemos todos os nossos pacientes com carinho.
+              <i class="bi bi-heart"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+  <script src="JavaScript/scripts.js"></script>
+</body>
+</html>
