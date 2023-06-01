@@ -80,7 +80,13 @@
   }
 
   /*TESTE DE FADE*/
-  
+  .init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear;
+  }
+  .init-hidden-off {
+    opacity: 1;
+  }
 
 
   /* SLIDER */
@@ -216,6 +222,7 @@
   }
 }
 
+
 /* DESTAQUES */
 #featured-container {
   margin-bottom: 4em;
@@ -294,7 +301,7 @@ h3 {
   color: #fff;
   background-color: #115e01;
   border-color: #c95b01;
-  border-radius: 8px;
+  border-radius: 2.5px;
 }
 
 .btn-check:focus+.btn-secondary, .btn-secondary:focus {
@@ -453,3 +460,10 @@ h3 {
 
 
 /*Trabalhe conosco*/
+.btn-primary:hover {
+  color: #fff;
+  background-color: #c95b01;
+  border-color: 1px solid #115e01;
+}
+
+/*arrow*/
