@@ -79,15 +79,8 @@
 	margin: 0 .5em;
   }
 
-  /*TESTE DE FADE*/
-  .init-hidden {
-    opacity: 0;
-    transition: opacity 1s linear;
-  }
-  .init-hidden-off {
-    opacity: 1;
-  }
-
+  
+  
 
   /* SLIDER */
 #slider {
@@ -197,7 +190,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  opacity: 0.6;
+  opacity: 1;
   transition: 0.5s;
 }
 .banner-content1 {
